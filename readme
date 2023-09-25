@@ -1,0 +1,15 @@
+Steps that i followed to create a todo app
+
+[Date-25 September 2023]
+
+{Note:learn about fetch and promises conncept used in it more}
+
+     while creatig a https server i learned various things
+     i.middlewares
+     ii.post,delete,get request methodes
+     iii.status code
+     iv.connecting backend to frontend by fetch library
+     {
+          sending the request from browser to http serveer through fetch
+     }
+     v.fixing cors error
