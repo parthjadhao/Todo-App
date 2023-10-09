@@ -15,6 +15,14 @@ Steps that i followed to create a todo app
      v.fixing cors error
 
 [Date-06 Octomber 2023]
-1.Building Dynamci website
-2.Learning DOM
-3.reconsiler 
+1.fetch data from input box using dom
+2.and send data to http server from by fetch
+3.http server store all the data in todos.json
+
+ 
+[Date-09 Octomber 2023]
+1.implmented connected delete button to delete route of our http server
+2.Learning about reconsilation
+3.created a reconsiler in replit
+[link of replit: - https://replit.com/@ParthJadhao/reconsiliation#script.js ]
+4.Assignment given by harkirate creating reconsiler of own which do state transition to be better

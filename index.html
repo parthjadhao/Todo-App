@@ -7,7 +7,20 @@
      <title>Todo-Apps</title>
 </head>
 <script>
-
+     function todoDelted() {
+          console.log("done delted")
+          //delete the right todo from the list you will need to give each todo id and it will be enough
+          //deleting the todo
+     }
+     function deleteTodos(id) {
+          console.log(id)
+          fetch("http://localhost:3000/todos/" + id, {
+               method: "DELETE",
+               headers: {
+                    "Content-Type": "application/json"
+               }
+          }).then(todoDelted)
+     }
      function todoCallBack(data) {
 
           // using DOM to add JS data into html as given below varaible data containing all todos
@@ -25,8 +38,8 @@
 
                //creating delet button
                var grandChildElement3 = document.createElement("button")
-               grandChildElement3 = document.innerHTML = "DELET"
-               grandChildElement3.setAttribute("onClick","deleteTodos("+data[i].id+")")
+               grandChildElement3.innerHTML = "delete"
+               grandChildElement3.setAttribute("onClick", "deleteTodos(" + data[i].id + ")")
 
                // adding grandChildElment in child element
                childElement.append(grandChildElement1)
@@ -60,10 +73,10 @@
           var grandChildElement2 = document.createElement("span")
           grandChildElement2.innerHTML = data.description
 
-          //creating delet button
+          // creating a delete button
           var grandChildElement3 = document.createElement("button")
-          grandChildElement3 = document.innerHTML = "DELET"
-          grandChildElement3.setAttribute("onclick","deleteTodos("+data.id+")")
+          grandChildElement3.innerHTML = "delete"
+          grandChildElement3.setAttribute("onClick", "deleteTodos(" + data.id + ")")
 
           // adding grandChildElment in child element
           childElement.append(grandChildElement1)
@@ -104,7 +117,7 @@
      <div id="mainArea">
           <!-- adding todos in mainArea html element -->
      </div>
-     
+
 </body>
 
 </html>
